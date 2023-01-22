@@ -31,6 +31,7 @@ button:hover {
   height: 500px;
   width: 500px;
   position:relative;
+  transform: translateY(-20%);
 }
 
 .carousel > ul {
@@ -49,8 +50,8 @@ button:hover {
 
 .slide >img {
   display: block;
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   object-position: center;
 }
@@ -199,12 +200,16 @@ button:hover {
   text-align: right;
   width: 100%;
   padding-right: 30px;
-  font-size: calc(50px * 2vw);
+  font-size: calc(100px * 2vw);
 }
 
 #arabic {
   margin-left: 15vw;
   padding-left: 2vw;
+}
+
+.whoarewe{
+  height: 100vh;
 }
 
 .whoarewe h3 {
@@ -218,7 +223,7 @@ h3 {
 
 .who-para {
   background: #e8e8e8;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .highlighted 
@@ -227,7 +232,11 @@ h3 {
   font-weight : bold;
 }
 
-
+#whoarewe-image{
+  width: 70%;
+  height: auto;
+  transform: translateX(5%);
+}
 
 .hero.whoarewe {
   background: #e8e8e8;
@@ -235,10 +244,12 @@ h3 {
   padding-left: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 0px;
   padding: 20px;
   width: 100%;
-  height: 90vh;
+  height: 100%;
 }
 
 .hero.mission {
@@ -249,17 +260,22 @@ h3 {
   height: 100%;
 }
 
-.hero.mission p {
-  background-color: #116d9d;
+.para-and-slide
+{
+  background: transparent;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
 }
+
 
 .hero.mission h3 {
   background-color: #116d9d;
 }
 
 .hero.mission p {
-  font-size: 2vw;
-  width: 100vw;
+  background-color: #116d9d;
+  font-size: calc(50px*1vw);
 }
 
 .misson-para {
@@ -277,6 +293,7 @@ h3 {
   flex-direction: column;
   text-align: center;
   gap: 0;
+  height: 100vh;
 }
 
 .hero.dyk{
@@ -342,4 +359,33 @@ h3 {
   filter : blur(0);
   transform: translateX(0);
 
+}
+
+.sponsors{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sponsors > img {
+  width: 40vw;
+  height: auto;
+  border: none;
+}
+.under-logos img {
+  background-color: white;
+  margin : 3vw;
+  width: 20vw;
+  height: auto;
+
+}
+.under-logos{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  gap:10vw;
 }
