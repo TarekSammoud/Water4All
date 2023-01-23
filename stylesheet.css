@@ -28,8 +28,8 @@ button:hover {
 
 .carousel{
 
-  height: 500px;
-  width: 500px;
+  height: 46vh;
+  width: 46vw;
   position:relative;
   transform: translateY(-20%);
 }
@@ -50,9 +50,9 @@ button:hover {
 
 .slide >img {
   display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 46vw;
+  height: 46vh;
+  object-fit:scale-down;
   object-position: center;
 }
 
